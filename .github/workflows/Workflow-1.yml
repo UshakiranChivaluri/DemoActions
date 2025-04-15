@@ -3,13 +3,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  
   setup-environment:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.9"]
-
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
