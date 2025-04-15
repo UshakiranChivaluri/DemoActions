@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  testing:
+  setup-environment:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,7 +17,7 @@ jobs:
         
 
       
-      - name: Run Python version
+      - name: Check Python version
         run: |
           python --version
          
