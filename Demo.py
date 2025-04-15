@@ -1,7 +1,13 @@
-# content of test_sample.py
-def func(x):
-    return x + 1
+import unittest
 
+class TestStringMethods(unittest.TestCase):
 
-def test_answer():
-    assert func(3) == 4
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
+    def test_lower(self):
+        self.assertEqual("FOO".lower( ), "foo")
+    
+
+if __name__ == '__main__':
+    unittest.main()
